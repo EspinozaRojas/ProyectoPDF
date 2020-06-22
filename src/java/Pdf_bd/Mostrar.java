@@ -49,8 +49,8 @@ public class Mostrar extends HttpServlet {
                 PdfWriter.getInstance(Documento, salida);
                 Documento.open();// abrir documento
                 // Metadatos
-                Documento.addAuthor("Carlos Alfredo ");
-                Documento.addCreator("Alvarez Lopez");
+                Documento.addAuthor("Esperanza");
+                Documento.addCreator("Espinoza");
                 
                 
                 Paragraph titulo = new Paragraph();
@@ -96,7 +96,7 @@ public class Mostrar extends HttpServlet {
                 Documento.add(tabla);// Meter al documento
                 Documento.close();// no olvidar cerrar el doc
             } catch (DocumentException e) {
-                System.out.println("Uff que hiciste perro " + e);
+                System.out.println("Te pasas Niko!!! " + e);
             }
                  
              }
